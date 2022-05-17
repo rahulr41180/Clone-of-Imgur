@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <div class="Navbar__Container">
+
+        <div>
+            <a href="index.html">
+                <img class="imgur__logo" src="/Image/imgur__logo.png" alt="">
+            </a>
+        </div>
+        <div onclick="uploadFn()">
+            <button class="NewPost__button">+</button>
+            <p>New Post</p>
+        </div>
+        <div>
+            <div class="InputSearch__Box">
+                <input oninput= debounce(main,1000) type="search" name="" id="ImageVideoSearch" placeholder="Images, #tags, @users oh my!">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="SearchItem__Show-Box">
+
+                <div class="ImageBox"></div>
+                <div class="VideoBox"></div>
+
+            </div>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135722.png" alt="">
+        </div>
+        <div>
+            <button>Go Ad-Free</button>
+        </div>
+        <div>
+            <button>Sign in</button>
+        </div>
+        <div>
+            <button>Sign up</button>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    <div class = "Heading">There are more planes in the ocean than submarines in the sky.</div>
+
+    <div class="Explore__Tag-Box">
+        <div class="Explore__Tag-Box__Heading">
+            <p>EXPLORE TAGS</p>
+            <p class="Tags" id = "Tag">MORE TAGS ➕</p>
+        </div>
+
+        <div class="Explore__Tag-Box-Grid"></div>
+    </div>
+
+    <div class="Grid__Container">
+        <div class="Grid__Container-Heading-Box">
+            <div class="Most__Viral">
+                <select class="Most__Viral-Select" name="" id="">
+                    <option value="">MOST VIRAL</option>
+                </select>
+            </div>
+            <div class="Newest__Box">
+                <div class="Newest__Select-Box">
+                    <select class="Newest__Select" name="" id="">
+                        <option value="">NEWEST</option>
+                    </select>
+                </div>
+                <i class="material-icons">&#xe064;</i>
+                <i class="material-icons">&#xe63a;</i>
+                <i class="material-icons">&#xe8f1;</i>
+            </div>
+        </div>
+
+        <div class="Grid__Container-Content-Box"></div>
+    </div>
+</body>
+</html>
+
+<!-- <script type="module" src="scripts/index.js"></script> -->
+
+<script src="scripts/index.js"></script>

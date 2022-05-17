@@ -1,0 +1,518 @@
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46,48,53);
+
+}
+/* ------------------------------- Navbar Start ----------------------------------------- */
+.Navbar__Container {
+    /* border: 1px solid; */
+    padding: .6vw;
+    width: 98.6vw;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(23,21,68);
+    display: flex;
+}
+.Navbar__Container > div:nth-child(1) {
+    /* border: 1px solid; */
+    width: 7.5%;
+    
+    height: 2.2vw;
+    display: flex;
+    cursor: pointer;
+}
+.Navbar__Container > div:nth-child(1) > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.imgur__logo {
+    width: 100%;
+    height: 100%;
+}
+.Navbar__Container > div:nth-child(2) {
+    /* border: 1px solid; */
+    margin-left: 1.4vw;
+    width: 7.5%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: rgb(27,183,110);
+    box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,1);
+    border-radius: .2vw;
+    cursor: pointer;
+}
+.NewPost__button {
+    width: 20%;
+    margin-left: .3vw;
+    height:1.4vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+}
+.NewPost__button ~ p {
+    /* border: 1px solid; */
+    margin: auto;
+    font-size: 1vw;
+    color: white;
+
+    font-weight: 1000;
+}
+.Navbar__Container > div:nth-child(3) {
+    /* border: 1px solid; */
+    margin-left: 12vw;
+    width: 40%;
+    background-color: rgb(69,68,105);
+    border-radius: .2vw;
+}
+.InputSearch__Box {
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 99.9%;
+    border-radius: .2vw;
+}
+
+.InputSearch__Box > input {
+    width: 94%;
+    height: 2.3vw;
+    outline: none;
+    padding: 0 0 0 .5vw;
+    font-size: 1.4vw;
+    background-color: rgb(69,68,105);
+    border-radius: .2vw;
+    color: white;
+    font-weight: 600;
+    border: 0;
+}
+
+.InputSearch__Box > input ~ i {
+    /* border: 1px solid; */
+    width: 6%;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6vw;
+    color: white;
+    border: 0;
+}
+.SearchItem__Show-Box {
+    /* border: 1px solid; */
+    width: 39.45%;
+    border-radius: .2vw;
+    /* height: 35vw; */
+
+    position: absolute;
+    margin-top: 1vw;
+    /* background-color: rgb(46,48,53); */
+    display: flex;
+    gap: .5vw;
+}
+.ImageBox {
+    
+    /* border: 1px solid; */
+    width: 45%;
+    padding: 1vw;
+    /* height: 32.8vw; */
+    border-radius: .2vw;
+    overflow: auto;
+}
+.HeadingBox {
+    border-bottom: 1px solid;
+    color: rgb(158, 236, 158);
+    font-size: 1.5vw;
+
+    width: fit-content;
+    margin: auto;
+}
+.ImageItem {
+    /* border: 1px solid; */
+    width: fit-content;
+    margin: .5vw auto auto .1vw;
+    color: rgb(174,216,234);
+    font-size: 1.4vw;
+    
+    cursor: pointer;
+}
+.ImageItem:hover {
+    background-color: rgb(174,216,234);
+    color: rgb(30, 58, 70);
+}
+.VideoBox {
+    /* border: 1px solid; */
+    overflow: auto;
+    width: 45%;
+    padding: 1vw;
+    /* height: 32.8vw; */
+    border-radius: .2vw;
+}
+.Navbar__Container > div:nth-child(4) {
+    /* border: 1px solid; */
+    margin-left: 4vw;
+    width: 2%;
+    height: 2.2vw;
+    display: flex;
+    background-color: rgb(174,216,234);
+}
+.Navbar__Container > div:nth-child(4) > img {
+    width: 100%;
+    height: 100%;
+}
+.Navbar__Container > div:nth-child(5) {
+    /* border: 1px solid; */
+    margin-left: 2vw;
+    width: 7%;
+    display: flex;
+}
+.Navbar__Container > div:nth-child(5) > button {
+    width: 100%;
+    height: 2.4vw;
+    background-color: rgb(100,50,249);
+    color: white;
+    outline: 0;
+
+    border: 0;
+    border-radius: .2vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.Navbar__Container > div:nth-child(6) {
+    /* border: 1px solid; */
+    margin-left: 1.8vw;
+    width: 5%;
+    display: flex;
+}
+.Navbar__Container > div:nth-child(6) > button {
+    width: 100%;
+    height: 2.3vw;
+    background-color: rgb(100,50,249);
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: .2vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.Navbar__Container > div:nth-child(7) {
+    /* border: 1px solid; */
+    margin-left: 1.4vw;
+    width: 6.5%;
+    display: flex;
+}
+.Navbar__Container > div:nth-child(7) > button {
+
+    width: 100%;
+    height: 2.25vw;
+    background-color: rgb(27,183,110);
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: .2vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+/* -------------------------------------- Navbar End --------------------------------------------- */
+
+.Heading {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 800;
+    margin-top: 3.6vw;
+    padding: 2vw 0 1vw 0;
+    bottom: 0;
+    background-color: rgb(23,21,68);
+    color: rgb(174,216,234);
+}
+
+.Explore__Tag-Box {
+
+    /* border: 1px solid; */
+    margin-top: 0;
+    width: 96.68vw;
+    /* background-color: rgb(23,21,68); */
+    background-color: rgb(23,21,68);
+    padding: 1vw 1vw 10vw 1vw;
+
+}
+.Explore__Tag-Box__Heading{
+    /* border: 1px solid; */
+    width: 90%;
+    margin: 1vw auto auto auto;
+
+    padding: .5vw .5vw 0vw .5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.Explore__Tag-Box__Heading > p {
+    margin: auto 0 .5vw 0;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(174,216,234);
+}
+#Tag {
+    margin: auto 0 .5vw 0;
+    border: 0;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+    
+    color: rgb(174,216,234);
+}
+.Explore__Tag-Box-Grid {
+    /* border: 1px solid; */
+    padding: .5vw;
+    width: 90%;
+    margin: auto auto auto auto;
+    height: 10vw;
+    display: grid;
+    grid-template-columns: repeat(10,9%);
+    grid-template-rows: repeat(4,4.5vw);
+
+    gap: 1vw;
+    overflow: hidden;
+    grid-template-areas: 
+    "a a b c d e f g h i"
+    "a a b c d e f g h i"
+    "j k l m n o p q r s"
+    "j k l m n o p q r s";
+}
+
+.ExploreGrid {
+    border: 1px solid rgb(174,216,234);;
+    margin: .5vw 0 0 0;
+    border-radius: .35vw;
+    cursor: pointer;
+}
+.ExploreGrid:hover {
+    margin: 0 0 .5vw 0;
+    transition: 470ms;
+}
+.Explore__Image {
+
+    margin: auto;
+    /* border: 1px solid; */
+    width: 99.9%;
+    border-radius: .35vw .35vw 0 0;
+    height: 4.9vw;
+
+    display: flex;
+}
+.Explore__Image-Image {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: .35vw .35vw 0 0;
+}
+.Explore__Content {
+    
+    /* border: 1px solid; */
+    width: 99.99%;
+    height: 4vw;
+    margin: auto;
+    border-radius: 0 0 .35vw .35vw;
+    padding: .5vw 0 0 0;
+}
+.Explore__Content > p:nth-child(1), p:nth-child(2) {
+    /* border: 1px solid; */
+    width: fit-content;
+    margin: auto auto auto auto;
+    font-size: 1vw;
+    color: white;
+    font-weight: 600;
+}
+.Explore__Content > p:nth-child(2) {
+
+    color: rgb(158, 236, 158);
+
+}
+
+
+.Grid__Container {
+    /* border: 1px solid; */
+    padding: .5vw;
+    margin: -6vw auto auto auto;
+    width: 80vw;
+}
+.Grid__Container-Heading-Box {
+    /* border: 1px solid; */
+    width: 99%;
+    margin: auto auto auto auto;
+    padding: .5vw 0vw .5vw 0vw;
+    display: flex;
+    justify-content: space-between;
+}
+.sticky {
+    position: fixed;
+    top: 3.7vw;
+    
+    left: 9.8vw;
+    right: 2;
+    width: 80.18%;
+    background-color: rgb(23,21,68);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.Most__Viral {
+    /* border: 1px solid; */
+    width: 12%;
+}
+.Newest__Box {
+    /* border: 1px solid; */
+    width: 20%;
+    display: flex;
+}
+.Most__Viral-Select {
+    width: 100%;
+    font-size: 1.25vw;
+    font-weight: 600;
+    background-color: rgb(23,21,68);
+    color: rgb(174,216,234);
+    height: 2vw;
+    outline: none;
+    border: 0;
+}
+.Newest__Select-Box {
+    /* border: 1px solid; */
+    width: 50%;
+}
+.Newest__Select {
+    width: 100%;
+    font-size: 1.25vw;
+    font-weight: 600;
+    height: 2vw;
+    background-color: rgb(23,21,68);
+    color: rgb(174,216,234);
+    outline: none;
+    border: 0;
+}
+.material-icons {
+    /* border: 1px solid; */
+    font-size: 2vw;
+    width: 15.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(174,216,234);
+    font-weight: 100;
+}
+
+.Grid__Container-Content-Box {
+    /* border: 1px solid; */
+    width: 98.2%;
+    margin: auto;
+    padding: .5vw .3vw .5vw .3vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1vw;
+}
+.Grid__Box {
+    border: 1px solid rgb(174,216,234);
+    height: fit-content;
+    border-radius: .5vw;
+}
+.Grid__ImageBox {
+    /* border: 1px solid; */
+    width: 99.8%;
+    border-radius: .5vw .5vw 0 0;
+    margin: auto;
+    height: 15vw;
+    padding: 1vw 0 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.Grid__VideoBox {
+    width: 100%;
+    border-radius: .5vw .5vw 0 0;
+    height: 16vw;
+    margin: auto;
+
+}
+.Grid__Video {
+    /* border: 1px solid yellow; */
+    width: 99.8%;
+    height: 100%;
+    border-radius: .5vw .5vw 0 0;
+}
+.Grid__ContentBox {
+    /* border: 1px solid; */
+    padding: 1vw;
+    margin: auto;
+    width: 88.99%;
+    border-radius: 0 0 .5vw .5vw;
+    background-color: rgb(71,74,81);
+}
+.Grid__ImageBoxContent {
+    /* border: 1px solid; */
+    width: fit-content;
+    border-radius: .2vw;
+    padding: .1vw .4vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: auto 1vw auto auto;
+    background-color: rgb(56,113,77);
+    color: white;
+}
+.Title__Box {
+    /* border: 1px solid; */
+    color: white;
+    width: 96%;
+    margin: auto;
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+.LikeComment__Box {
+    /* border: 1px solid; */
+    width: 96%;
+    margin: 1vw auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Like__Box {
+    /* border: 1px solid; */
+    display: flex;
+    margin: auto 0 auto .1vw;
+    justify-content: center;
+    align-items: center;
+    font-size: .9vw;
+    gap: .4vw;
+    color: rgb(174,216,234);
+}
+
+.UpperArrow,.DownArrow,.CommentIcon,.ViewIcon {
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.Comment__Box {
+    /* border: 1px solid; */
+    margin: auto 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9vw;
+    gap: .5vw;
+    color: rgb(174,216,234);
+}
+.View__Box {
+    /* border: 1px solid; */
+    display: flex;
+    margin: auto .1vw auto .1vw;
+    justify-content: center;
+    align-items: center;
+    font-size: .9vw;
+    gap: .4vw;
+    color: rgb(174,216,234);
+}
